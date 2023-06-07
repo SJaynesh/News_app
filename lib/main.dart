@@ -2,6 +2,7 @@ import 'package:exam_app/Controllers/BookMark_Provider.dart';
 import 'package:exam_app/Model/BoockMark_Model.dart';
 import 'package:exam_app/View.Screens/Homepage.dart';
 import 'package:exam_app/View.Screens/SecondPage.dart';
+import 'package:exam_app/View.Screens/SplachScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -21,7 +22,8 @@ void main() async {
       builder: (context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
-          "/": (context) => HomePage(),
+          "/": (context) => SplachScreen(),
+          "homePage": (context) => HomePage(),
           "secondPage": (context) => SecondPage(),
         },
       ),
